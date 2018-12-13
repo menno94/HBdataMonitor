@@ -1,8 +1,11 @@
 # inspectietoolHB
 
 ## example
+
 import InspectietoolHB from inspectietoolHB
+
 myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
+
 DBtool = InspectietoolHB()
 #show general info - input variables are written to file
 DBtool.get_DB_info(myDatabase)
