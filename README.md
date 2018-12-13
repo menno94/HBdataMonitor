@@ -6,8 +6,7 @@ Met de inspectietoolHB kan de data in de SQLite hydraulische randvoorwaarden dat
 
 Voorbeeld
 --------
-
-'''
+```ruby
   import InspectietoolHB from inspectietoolHB
 
   myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
@@ -23,4 +22,4 @@ Voorbeeld
   DBtool.DBinput('Hsign', variables)
   #plot results based on the text file
   DBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
-  '''
+```ruby
