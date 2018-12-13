@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='inspectietoolHB',
-      version='0.3',
+      version='0.5',
       description='Tool to visualize HB SQLite databases',
       url='https://github.com/menno94/inspectietoolHB',
       author='Menno de ridder',
@@ -14,7 +14,6 @@ setup(name='inspectietoolHB',
         'numpy',
         'pandas',
         'matplotlib',
-        'sqlite',
 		],
 	python_requires='>=3, <4',
       zip_safe=False)
