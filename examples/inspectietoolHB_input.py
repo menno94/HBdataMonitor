@@ -10,7 +10,7 @@ input
 ## checks
 if __name__=='__main__':
     
-    example=4
+    example=7
     
     if example==1:
         '''
@@ -19,16 +19,16 @@ if __name__=='__main__':
         ## database
         myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
         ## open inspectietoolHB class
-        DBtool = InspectietoolHB()
+        HBtool = InspectietoolHB()
         ## show general info - input variables are written to file
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables  
         variables = {'WINDS':[0.0, 14.0], 'MEERP':['all'], 'WindDir':[225.0], 'loc':['YM_2_6-1_dk_00997', 'YM_1_6-1_dk_01000'],'ClosingSituation':[1], 'DB':[myDatabase]}
         ## extract data - data is written to a file
-        DBtool.DBinput('Hsign', variables)
+        HBtool.DBinput('Hsign', variables)
         
         ## plot results based on the text file
-        DBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
+        HBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
     
     if example==2:
         '''
@@ -66,10 +66,10 @@ if __name__=='__main__':
         ## show general info
         DBtool.get_DB_info(myDatabase)
         ## input variables  
-        variables = {'Discharge Maas':['all'],
+        variables = {'Discharge Maas':[55.0, 377.0 , 884.0, 1284.0, 1708.0],
                      'Wind speed':[20.0],
-                     'Waterlevel HvH':['all'],
-                     'WindDir':[225.0,247.5,270.0,292.5,315.0],
+                     'Waterlevel HvH':[6.04, 7.04, 8.04],
+                     'WindDir':[225.0, 247.5, 270.0, 292.5, 315.0],
                      'loc':['BM_1_35-1_dk_00103'],
                      'ClosingSituation':[1],
                      'DB': [myDatabase]}
@@ -143,7 +143,7 @@ if __name__=='__main__':
         variables = {'MAXWINDS': ['all'],
                      'ZMAX': [4],
                      'WindDir': [30],
-                     'loc': ['all'],
+                     'loc': ['OS_1_26-2_dk_00006','OS_1_26-2_dk_00008','OS_1_26-2_dk_00011','OS_1_26-2_dk_00013','OS_1_26-2_dk_00016','OS_1_26-2_dk_00018'],
                      'ClosingSituation': [1],
                      'DB': [myDatabase]}
         ## extract data
@@ -151,7 +151,6 @@ if __name__=='__main__':
 
         ## plot results
         DBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')
-        
     
     
     
