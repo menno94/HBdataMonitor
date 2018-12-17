@@ -1,4 +1,4 @@
-InspectietoolHB
+BeheertoolHB
 ===========
 Met de inspectietoolHB kan de data in de SQLite hydraulische randvoorwaarden databases worden weergeven.
 
