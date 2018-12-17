@@ -6,12 +6,12 @@ Met de inspectietoolHB kan de data in de SQLite hydraulische randvoorwaarden dat
 Voorbeeld
 --------
 ```ruby
-import InspectietoolHB from inspectietoolHB
+import BeheertoolHB from beheertoolHB
 ## location database
 myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
 
 ## InspectietoolHB class
-DBtool = InspectietoolHB()
+DBtool = BeheertoolHB()
 
 ## show general info and input variables are written to a asci file
 DBtool.get_DB_info(myDatabase)
