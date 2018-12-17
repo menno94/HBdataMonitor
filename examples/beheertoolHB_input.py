@@ -3,14 +3,10 @@ from beheertoolHB import BeheertoolHB
 input
 '''
 
-## database
-## plot lines
-## variable x
-## oosterschelde
-## checks
+
 if __name__=='__main__':
     
-    example=1
+    example=6
     
     if example==1:
         '''
@@ -42,7 +38,7 @@ if __name__=='__main__':
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
-        variables = {'Wind speed Deelen':[5.0,0.0,10.0,20.0,15.0],
+        variables = {'Wind speed Deelen':[0.0,5.0,10.0,15.0,20.0],
                      'Discharge Borgharen':[1300.0, 2260.0],
                      'WindDir':[45],
                      'loc':['MA_1_36-3_dk_00447'],
@@ -62,9 +58,9 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\BenedenMaas\Copy_WBI2017_Benedenmaas_35-1_v03.sqlite'
         
         ## 
-        DBtool = BeheertoolHB()
+        HBtool = BeheertoolHB()
         ## show general info
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables  
         variables = {'Discharge Maas':[55.0, 377.0 , 884.0, 1284.0, 1708.0],
                      'Wind speed':[20.0],
@@ -74,7 +70,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB': [myDatabase]}
         ## extract data
-        DBtoolHBinput('Hs', variables)
+        HBtool.HBinput('Hs', variables)
         
         ## plot results
         HBtool.create_plot(X='Discharge Maas', Y='Hs', Z1='Waterlevel HvH', Z2='WindDir')
@@ -87,7 +83,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\Europoort\Copy_WBI2017_Europoort_20-1_v03.sqlite'
         
         ## 
-        DBtool = BeheertoolHB()
+        HBtool = BeheertoolHB()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -112,7 +108,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\BovenMaasHogeKeringen\WBI2017_Bovenmaas_hoge_keringen_54-1_55-1_56-1_58-1_v03.sqlite'
         
         ## 
-        DBtool = BeheertoolHB()
+        HBtool = BeheertoolHB()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -123,7 +119,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtoolHBinput('Wave height', variables)
+        HBtool.HBinput('Wave height', variables)
         
         ## plot results
         HBtool.create_plot(X='Wind speed Deelen',Y='Wave height',Z2='Discharge Borgharen',Z1='WindDir')
@@ -136,7 +132,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\WBI2017_Oosterschelde_26-2_v02\WBI2017_Oosterschelde_26-2_v02.sqlite'
 
         ##
-        DBtool = BeheertoolHB()
+        HBtool = BeheertoolHB()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables
@@ -151,6 +147,4 @@ if __name__=='__main__':
 
         ## plot results
         HBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')
-    
-    
-    
+
