@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='beheertoolHB',
-      version='1.0.1',
+      version='1.0.2',
       description='Tool to visualize HB SQLite databases',
       url='https://github.com/menno94/beheertoolHB',
       author='Menno de ridder',

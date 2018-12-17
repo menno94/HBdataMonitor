@@ -25,7 +25,7 @@ if __name__=='__main__':
         ## input variables  
         variables = {'WINDS':[0.0, 14.0], 'MEERP':['all'], 'WindDir':[225.0], 'loc':['YM_2_6-1_dk_00997', 'YM_1_6-1_dk_01000'],'ClosingSituation':[1], 'DB':[myDatabase]}
         ## extract data - data is written to a file
-        HBtool.DBinput('Hsign', variables)
+        HBtool.HBinput('Hsign', variables)
         
         ## plot results based on the text file
         HBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
@@ -49,7 +49,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtool.DBinput('Wave height', variables)
+        DBtool.HBinput('Wave height', variables)
         
         ## plot results
         DBtool.create_plot(Z1='Discharge Borgharen')
@@ -74,7 +74,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB': [myDatabase]}
         ## extract data
-        DBtool.DBinput('Hs', variables)
+        DBtoolHBinput('Hs', variables)
         
         ## plot results
         DBtool.create_plot(X='Discharge Maas', Y='Hs', Z1='Waterlevel HvH', Z2='WindDir')
@@ -99,7 +99,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtool.DBinput('Zmax', variables)
+        DBtool.HBinput('Zmax', variables)
         
         ## plot results
         DBtool.create_plot(X='QBR',Y='Zmax',Z1='WindDir',Z2='MAXWINDS')
@@ -123,7 +123,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtool.DBinput('Wave height', variables)
+        DBtoolHBinput('Wave height', variables)
         
         ## plot results
         DBtool.create_plot(X='Wind speed Deelen',Y='Wave height',Z2='Discharge Borgharen',Z1='WindDir')
@@ -147,7 +147,7 @@ if __name__=='__main__':
                      'ClosingSituation': [1],
                      'DB': [myDatabase]}
         ## extract data
-        DBtool.DBinput('Dir', variables)
+        DBtool.HBinput('Dir', variables)
 
         ## plot results
         DBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')
