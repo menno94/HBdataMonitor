@@ -1,4 +1,4 @@
-from inspectietoolHB import InspectietoolHB
+from beheertoolHB import BeheertoolHB
 '''
 input
 '''

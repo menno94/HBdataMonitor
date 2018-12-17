@@ -1,1 +1,1 @@
-from inspectietoolHB.inspectietoolHB import InspectietoolHB
+from beheertoolHB.beheertoolHB import BeheertoolHB
