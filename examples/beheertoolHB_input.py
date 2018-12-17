@@ -38,9 +38,9 @@ if __name__=='__main__':
         myDatabase = 'd:\\InspectietoolHB\\data\\BovenMaas\\WBI2017_Bovenmaas_36-3_v03.sqlite'
         
         ## 
-        DBtool = BeheertoolHB()
+        HBtool = BeheertoolHB()
         ## show general info
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables  
         variables = {'Wind speed Deelen':[5.0,0.0,10.0,20.0,15.0],
                      'Discharge Borgharen':[1300.0, 2260.0],
@@ -49,10 +49,10 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtool.HBinput('Wave height', variables)
+        HBtool.HBinput('Wave height', variables)
         
         ## plot results
-        DBtool.create_plot(Z1='Discharge Borgharen')
+        HBtool.create_plot(Z1='Discharge Borgharen')
     
     if example==3:
         '''
@@ -77,7 +77,7 @@ if __name__=='__main__':
         DBtoolHBinput('Hs', variables)
         
         ## plot results
-        DBtool.create_plot(X='Discharge Maas', Y='Hs', Z1='Waterlevel HvH', Z2='WindDir')
+        HBtool.create_plot(X='Discharge Maas', Y='Hs', Z1='Waterlevel HvH', Z2='WindDir')
     
     if example==4:
         '''
@@ -89,7 +89,7 @@ if __name__=='__main__':
         ## 
         DBtool = BeheertoolHB()
         ## show general info
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables  
         variables = {'ZMAXMAMO':[1.33],
                      'QBR':['all'],
@@ -99,10 +99,10 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        DBtool.HBinput('Zmax', variables)
+        HBtool.HBinput('Zmax', variables)
         
         ## plot results
-        DBtool.create_plot(X='QBR',Y='Zmax',Z1='WindDir',Z2='MAXWINDS')
+        HBtool.create_plot(X='QBR',Y='Zmax',Z1='WindDir',Z2='MAXWINDS')
     
     if example==5:
         '''
@@ -114,7 +114,7 @@ if __name__=='__main__':
         ## 
         DBtool = BeheertoolHB()
         ## show general info
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables  
         variables = {'Wind speed Deelen':['all'],
                      'Discharge Borgharen':['all'],
@@ -126,7 +126,7 @@ if __name__=='__main__':
         DBtoolHBinput('Wave height', variables)
         
         ## plot results
-        DBtool.create_plot(X='Wind speed Deelen',Y='Wave height',Z2='Discharge Borgharen',Z1='WindDir')
+        HBtool.create_plot(X='Wind speed Deelen',Y='Wave height',Z2='Discharge Borgharen',Z1='WindDir')
 
     if example == 6:
         '''
@@ -138,7 +138,7 @@ if __name__=='__main__':
         ##
         DBtool = BeheertoolHB()
         ## show general info
-        DBtool.get_DB_info(myDatabase)
+        HBtool.get_DB_info(myDatabase)
         ## input variables
         variables = {'MAXWINDS': ['all'],
                      'ZMAX': [4],
@@ -147,10 +147,10 @@ if __name__=='__main__':
                      'ClosingSituation': [1],
                      'DB': [myDatabase]}
         ## extract data
-        DBtool.HBinput('Dir', variables)
+        HBtool.HBinput('Dir', variables)
 
         ## plot results
-        DBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')
+        HBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')
     
     
     
