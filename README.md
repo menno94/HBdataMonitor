@@ -1,12 +1,12 @@
-BeheertoolHB
+HBdataMonitor
 ===========
-Met de beheertoolHB kan de data in de SQLite hydraulische randvoorwaarden databases worden weergeven.
+Met de HBdataMonitor kan de data in de SQLite hydraulische randvoorwaarden databases worden weergeven.
 
 
 Voorbeeld
 --------
 ```ruby
-import BeheertoolHB from beheertoolHB
+import HBdataMonitor from HBdataMonitor
 ## location database
 myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
 
