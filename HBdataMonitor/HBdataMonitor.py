@@ -7,7 +7,7 @@ import itertools
 
 
 
-class BeheertoolHB():
+class HBdataMonitor():
     '''
     Python class to extract data from a SQLite HB database
     requirements

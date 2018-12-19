@@ -1,1 +1,1 @@
-from beheertoolHB.beheertoolHB import BeheertoolHB
+from HBdataMonitor.HBdataMonitor import HBdataMonitor
