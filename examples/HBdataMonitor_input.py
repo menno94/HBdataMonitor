@@ -1,4 +1,4 @@
-from beheertoolHB import BeheertoolHB
+from HBdataMonitor import HBdataMonitor
 '''
 input
 '''
@@ -15,7 +15,7 @@ if __name__=='__main__':
         ## database
         myDatabase = 'd:\InspectietoolHB\data\GR2017_IJsselmeer_6-1_v01.sqlite'
         ## open inspectietoolHB class
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info - input variables are written to file
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -34,7 +34,7 @@ if __name__=='__main__':
         myDatabase = 'd:\\InspectietoolHB\\data\\BovenMaas\\WBI2017_Bovenmaas_36-3_v03.sqlite'
         
         ## 
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -58,7 +58,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\BenedenMaas\Copy_WBI2017_Benedenmaas_35-1_v03.sqlite'
         
         ## 
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -83,7 +83,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\Europoort\Copy_WBI2017_Europoort_20-1_v03.sqlite'
         
         ## 
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -108,7 +108,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\BovenMaasHogeKeringen\WBI2017_Bovenmaas_hoge_keringen_54-1_55-1_56-1_58-1_v03.sqlite'
         
         ## 
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables  
@@ -132,7 +132,7 @@ if __name__=='__main__':
         myDatabase = 'd:\InspectietoolHB\data\WBI2017_Oosterschelde_26-2_v02\WBI2017_Oosterschelde_26-2_v02.sqlite'
 
         ##
-        HBtool = BeheertoolHB()
+        HBtool = HBdataMonitor()
         ## show general info
         HBtool.get_DB_info(myDatabase)
         ## input variables
