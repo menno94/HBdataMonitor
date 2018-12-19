@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='HBdataMonitor',
-      version='1.0.2',
+      version='1.0.0',
       description='Tool to visualize HB SQLite databases',
       url='https://github.com/menno94/HBdataMonitor',
       author='Menno de ridder',

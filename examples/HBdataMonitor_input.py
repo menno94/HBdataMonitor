@@ -6,7 +6,7 @@ input
 
 if __name__=='__main__':
     
-    example=6
+    example=1
     
     if example==1:
         '''
@@ -21,7 +21,7 @@ if __name__=='__main__':
         ## input variables  
         variables = {'WINDS':[0.0, 14.0], 'MEERP':['all'], 'WindDir':[225.0], 'loc':['YM_2_6-1_dk_00997', 'YM_1_6-1_dk_01000'],'ClosingSituation':[1], 'DB':[myDatabase]}
         ## extract data - data is written to a file
-        HBtool.HBinput('Hsign', variables)
+        HBtool.HBoutput('Hsign', variables)
         
         ## plot results based on the text file
         HBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
@@ -45,7 +45,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        HBtool.HBinput('Wave height', variables)
+        HBtool.HBoutput('Wave height', variables)
         
         ## plot results
         HBtool.create_plot(Z1='Discharge Borgharen')
@@ -70,7 +70,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB': [myDatabase]}
         ## extract data
-        HBtool.HBinput('Hs', variables)
+        HBtool.HBoutput('Hs', variables)
         
         ## plot results
         HBtool.create_plot(X='Discharge Maas', Y='Hs', Z1='Waterlevel HvH', Z2='WindDir')
@@ -95,7 +95,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        HBtool.HBinput('Zmax', variables)
+        HBtool.HBoutput('Zmax', variables)
         
         ## plot results
         HBtool.create_plot(X='QBR',Y='Zmax',Z1='WindDir',Z2='MAXWINDS')
@@ -119,7 +119,7 @@ if __name__=='__main__':
                      'ClosingSituation':[1],
                      'DB':[myDatabase]}
         ## extract data
-        HBtool.HBinput('Wave height', variables)
+        HBtool.HBoutput('Wave height', variables)
         
         ## plot results
         HBtool.create_plot(X='Wind speed Deelen',Y='Wave height',Z2='Discharge Borgharen',Z1='WindDir')
@@ -143,7 +143,7 @@ if __name__=='__main__':
                      'ClosingSituation': [1],
                      'DB': [myDatabase]}
         ## extract data
-        HBtool.HBinput('Dir', variables)
+        HBtool.HBoutput('Dir', variables)
 
         ## plot results
         HBtool.create_plot(X='loc', Y='Dir', Z1='MAXWINDS')

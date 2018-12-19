@@ -150,7 +150,7 @@ class HBdataMonitor():
                 f.write(string + '\n')         
 
 
-    def HBinput(self,Y,inputX,fname='result.txt'):
+    def HBoutput(self,Y,inputX,fname='result.txt'):
         '''
         input function to execute sql command
         1. create a dictionary which can be used to extract the data
