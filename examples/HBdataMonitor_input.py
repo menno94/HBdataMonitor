@@ -6,7 +6,7 @@ input
 
 if __name__=='__main__':
     
-    example=1
+    example=2
     
     if example==1:
         '''
@@ -19,12 +19,12 @@ if __name__=='__main__':
         ## show general info - input variables are written to file
         HBtool.get_DB_info(myDatabase)
         ## input variables  
-        variables = {'WINDS':[0.0, 14.0], 'MEERP':['all'], 'WindDir':[225.0], 'loc':['YM_2_6-1_dk_00997', 'YM_1_6-1_dk_01000'],'ClosingSituation':[1], 'DB':[myDatabase]}
+        variables = {'WINDS':['all'], 'MEERP':[-0.4,1.8], 'WindDir':[90, 180, 270, 360], 'loc':['YM_2_6-1_dk_00997'],'ClosingSituation':[1], 'DB':[myDatabase]}
         ## extract data - data is written to a file
         HBtool.HBoutput('Hsign', variables)
         
         ## plot results based on the text file
-        HBtool.create_plot(X='loc',Y='Hsign',Z1='MEERP',Z2='WINDS')
+        HBtool.create_plot(X='WINDS',Y='Hsign',Z1='WindDir',Z2='MEERP')
     
     if example==2:
         '''
